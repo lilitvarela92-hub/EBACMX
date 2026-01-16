@@ -145,3 +145,7 @@ jugador_nuevo = pd.DataFrame[[
         'Skill Moves': 5.0, 'Position': 'ST', 'Joined': 2020, 'Contract Valid Until': '2025-01-04', 
         'Height': 6.0, 'Weight': 175.0, 'Release Clause': 300000.0
     }]]
+
+df_nuevo = pd.concat([df, jugador_nuevo], ignore_index=True)
+
+df_nuevo
