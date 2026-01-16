@@ -77,6 +77,7 @@ jugadores_nuevos = pd.DataFrame([
     }
 ])
 
+
 # Añadirlos al DataFrame original
 df_nuevo = pd.concat([df, jugadores_nuevos], ignore_index=True)
 
@@ -135,3 +136,12 @@ df[['Name', 'Potential', 'Candidato']].head(10)
 
 
 
+# Añadir un nuevo jugador al Dataframe
+jugador_nuevo = pd.DataFrame[[
+    {
+        'ID': 246271, 'Name': 'Sanchez L. Pedro', 'Age': 38, 'Nationality': 'Mexico', 
+        'Overall': 40, 'Potential': 91, 'Club': 'Barcelona', 'Value': 130000.0, 
+        'Wage': 480.0, 'Preferred Foot': 'Right', 'International Reputation': 4.0, 
+        'Skill Moves': 5.0, 'Position': 'ST', 'Joined': 2020, 'Contract Valid Until': '2025-01-04', 
+        'Height': 6.0, 'Weight': 175.0, 'Release Clause': 300000.0
+    }]]
